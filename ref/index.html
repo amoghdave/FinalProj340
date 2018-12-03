@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  rel="stylesheet" href="./css/final-style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dosis|KoHo|Pragati+Narrow|Sue+Ellen+Francisco');
+    </style>
+    <link id="fa" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <meta name="author" content="Esha More">
+    <title> Fieldtrip </title>
+    <link rel="icon" type="png" href="./img/logoIconTeal.png"/>
+</head>
+
+<!-- NEED TO USE HEADERS-->
+
+<body>
+
+    <!-- NAVBAR: FIEDLTRIP                                HOME | STORIES | GO BEYOND -->
+    <!-- Need icon for fieldtrip title and potentially nav link titles-->
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="./index.html" class="logo"> FIELDTRIP <i class="fas fa-paper-plane" aria-label="paper plane"></i></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                    <a href="./stories.html" class="links" aria-label="navigate to">stories</a>
+            </li>
+            <li>
+                <a href="./events.html" class="links" aria-label="navigate to">events</a>
+            </li>
+            <li>
+                <a href="#about" class="links" aria-label="navigate to">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--
+        HOME: Image of globe on top of a book with few dots that show stories when hovered over
+                Few more animations with the globe 
+    -->
+    <img id="map" src="./img/fullMap.jpg" alt="Three Dimensional Map of the World">
+
+    <!--
+        3 SECTIONS: (BG for each is a horizontal image that moves and animates when you hover)
+            WHAT WE DO
+                CONTENT
+
+            HOW WE DO IT
+                CONTENT
+
+            WHY WE DO IT
+                CONTENT
+    -->
+    <div class="container">
+        
+        <div class="column">            
+            <h2>
+                <i class="fa fa-question"></i> <br>
+                what we do</h2>
+            <div class="about">
+                <p>
+                    We wanted to go beyond just providing materials; we wanted to teach,
+                    to have a direct connection with these students. And so began our
+                    fieldtrip idea.<br> <br>
+                    Through Fieldtrip, the kids can experience the world from the luxury
+                    of their home or school. We tell stories based on a specific
+                    geographical location the children choose from. Then based on each
+                    location we provide different genres of stories to keep the children
+                    engaged and excited.<br> <br>
+                    As the children read more they can also choose more challenging
+                    content to read and improve their reading skills while discovering
+                    the world.
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>
+                <i class="fa fa-laptop"></i> <br>
+                how we do it</h2>
+            <div class="about">
+                <p>
+                    There are a few regions on the globe the children can select from and the
+                    site navigates to the stories in that region. Then the children can
+                    simply pick which story they want to read.<br> <br>
+                    Many pictures and videos are supplied with the stories to give the
+                    children an audio visual experience of the moment. Education isn't simply
+                    an opportunity for kids to memorize curriculum and apply their knowledge,
+                    it is also an opportunity for them to grow with the world. Therefore,
+                    by reading about various cultural stories from various perspectives
+                    can give the children a global outlook on life.
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>
+                <i class="fa fa-globe-asia"></i> <br>
+                why we do it</h2>
+            <div class="about">
+                <p>
+                    It all began with an idea to unlock the life-changing power of modern
+                    technology, something ignored or forgotten in many developed areas
+                    around the world. Kinspire wanted to focus on using this technology
+                    in order to ensure that every child has access to a well-rounded
+                    schooling. This was, of course, easier said than done. One of the
+                    biggest challenges we faced in our initial planning was the fact
+                    that in these underprivileged communities, education was a luxury;
+                    simply proclaiming that education would be the solution was far from
+                    enough. <br> <br>
+                    Therefore, we empahsize on the use of technology to bridge the gap
+                    between the children and the rest of the world. Through Fieldtrip
+                    the kids can learn about a whole different world across the globe.
+                    It is meant to be a cultural immersion experience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        GO BEYOND: List of countries to visit > *plane animation to show travel*
+                     List of cities > *car animation to show travel*
+                     List of most popular monuments in that given city.
+                    
+                    The monuments are each attached to a picture in a card
+                    With small description below the image (similar in theme as STORIES)
+                    and their addresses.
+    -->
+
+    <footer class="footbar">
+        <div class="company">
+            Website By Kinspire UW
+        </div>
+        <div class="email">
+            For any Copyright, questions, and concerns contact us at 
+            <a href="mailto:kinspire@uw.edu"> kinspire@uw.edu</a>
+        </div>
+    </footer>
+
+    <!-- JS file -->
+    <script src="./js/responsive.js"></script>
+
+</body>
+
+</html>

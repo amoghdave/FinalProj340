@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dosis|KoHo|Pragati+Narrow|Sue+Ellen+Francisco');
+
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  font-family: "Koho", "Dosis";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.body{
+  background-color: #6DD5FA;
+}
+
+.nav-wrapper{
+  font-size: 40px; 
+  text-align: center;
+  text-decoration: none;
+}
+#link {
+  padding: 25px;
+  color: teal;
+  font-family: "Sue Ellen Francisco";
+  font-size: 40px; 
+
+}
+
+.name {
+  font-family: "Sue Ellen Francisco";
+  padding-left: 20px; 
+  text-decoration: underline; 
+  padding-top: 15px; 
+}

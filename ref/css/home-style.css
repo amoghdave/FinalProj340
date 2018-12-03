@@ -1,0 +1,73 @@
+/*fonts:
+/*Sue Ellen Francisco*/
+/*Koho*/
+/*Dosis*/
+/*Pragati Narrow*/
+body {
+    background-color: #3ea6cc;
+    font-family: "Dosis";
+}
+
+.bar {
+    display: flex;
+    width: 100%;
+}
+
+#name {
+    font-family: "Sue Ellen Francisco";
+    font-size: 30px;
+    text-decoration: bold;
+    text-align: left;
+}
+
+title > li > a {
+    padding-left:0;
+}
+
+.buttons {
+    text-align: right;
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #fff880;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+li > a {
+    padding: 10px;
+}
+
+a {
+    color: #3f94b2;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3ea6cc;
+}
+
+h2 {
+    font-family: "Koho";
+}
+
+img {
+    size: 100px;
+}
+
+footer {
+    background-color: #3f94b2;
+    padding: 8px;
+    margin: 0;
+}

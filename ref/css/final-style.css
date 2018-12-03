@@ -1,0 +1,292 @@
+/*fonts:
+/*Sue Ellen Francisco*/
+/*Koho*/
+/*Dosis*/
+/*Pragati Narrow
+
+color: 
+light blue #3ea6cc;
+yellow #fff880;
+dark blue #3f94b2;*/
+@import url('https://fonts.googleapis.com/css?family=Dosis|KoHo|Pragati+Narrow|Sue+Ellen+Francisco');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    background-repeat: none;
+    background-image: cover;
+}
+
+body {
+    background-image: linear-gradient( #6DD5FA, #FFFFFF);
+    font-family: "Koho", "Dosis";
+}
+
+/* navbar formatting */
+
+.navbar {
+    font-size: 25px;
+    background-color: #fff880;
+    border: 1px solid (0, 0, 0, 0.2);
+    padding-bottom: 0px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.links, .logo {
+    text-decoration: none;
+    color: #3f94b2; 
+}
+
+.links {
+    font-family: "Pragati Narrow";
+}
+
+.main-nav > li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Sue Ellen Francisco";
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.navbar-toggle > i {
+    color: #3f94b2;
+}
+
+.active {
+    display: block;
+}
+
+/* media query for navbar to change with size using js */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .links {
+        margin-left: 30px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+
+    .links:hover {
+        color: #3ea6cc;
+    }
+}
+
+/* formatting the info into column layouts */
+h2 {
+    margin-left: 7px;
+    color: #3f94b2
+}
+
+p {
+    padding: 7px;
+    text-align: left;
+    color: #3ea6cc;
+    text-shadow: none;
+}
+
+.column {
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px 5px 10px 5px;
+    padding: 10px;
+}
+
+/* media query for about columns to change to vertical layout */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+
+    .column {
+        width: 33.33%;
+    }
+}
+
+.container {
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+}
+
+/*formatting image */
+img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}
+
+/* formatting footer */
+footer {
+    padding: 15px;
+    width: 100%;
+    background-color:#3f94b2;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.email > a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768) {
+    .company {
+        display: inline-block;
+    }
+
+    .email {
+        float: right;
+    }
+}
+
+/* formatting stories */
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card {
+    flex: 0 0 250px;
+    background-color: transparent;
+    margin: .5rem;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16),0 1px 3px rgba(0,0,0,0.23);
+}
+.cardImg {
+    background-size: cover;
+    height: 225px;
+    width: 250px;
+}
+
+.cardContent {
+    padding: .5rem 1rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.cardTitle {
+    padding: .5rem 1rem;
+    width: 250px;
+    height: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Sue Ellen Francisco";
+    text-shadow: none;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.fa {
+    color: white;
+}
+/* media query to change card stacking */
+
+/* timeline formatting */
+#issues > li > p.title {
+    font-size: 20px;
+}
+
+/* timeline media query */
+@media (min-width: 768) {
+    #timeline {
+    }
+}
+
+#issues > li > img {
+    height: 300px;
+    width: 400px;
+}
+
+#timeline {
+    margin-top: 30px;
+}
+
+/* calendar formatting */
+.calendar {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+td {
+    padding: 35px;
+    text-align: center;
+    font-family: "Sue Ellen Francisco";
+    font-size: 30px;
+    color: #3f94b2;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    /*border: 3px solid white;*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.10),0 1px 3px rgba(0,0,0,0.04);
+}
+
+td:hover {
+    background-color: #6DD5FA;
+}
+
+#eventTitle {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/*.eventImg {
+    height: 120px;
+    width: 170px;
+    padding: 50px;
+    margin: 0px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+}*/

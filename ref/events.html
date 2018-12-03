@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Esha More">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.1/papaparse.min.js"></script>
+        <script src="libraries/jQuery-Timelinr-0.9.7/js/jquery.timelinr-0.9.7.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./libraries/jQuery-Timelinr-0.9.7/js/jquery.timelinr-0.9.7.js"></script>
+        <link rel="stylesheet" href="./libraries/jQuery-Timelinr-0.9.7/css/style.css">
+        <link  rel="stylesheet" href="./css/final-style.css">
+        <link id="fa" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+        <title> Events </title>
+        <link rel="icon" type="png" href="./img/logoIconTeal.png"/>
+    </head>
+
+<body>
+    <!-- NAVBAR: FIEDLTRIP                                HOME | STORIES | GO BEYOND -->
+    <!-- Need icon for fieldtrip title and potentially nav link titles-->
+    <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href="./index.html" class="logo"> FIELDTRIP <i class="fas fa-paper-plane" aria-label="paper plane"></i></a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                        <a href="./stories.html" class="links" aria-label="navigate to">stories</a>
+                </li>
+                <li>
+                    <a href="./events.html" class="links" aria-label="navigate to">events</a>
+                </li>
+                <li>
+                    <a href="./index.html#about" class="links" aria-label="navigate to">about</a>
+                </li>
+            </ul>
+        </nav>
+
+    <h2 id="eventTitle">
+        <i class="fa fa-calendar-alt"></i> <br>
+        select a month
+    </h2>
+
+        <div class="calendar" role="table">
+            <table style="width:auto">
+                <tr>
+                    <td aria-label="January">january</td>
+                    <td aria-label="February">february</td> 
+                    <td aria-label="March">march</td>
+                    <td aria-label="April">april</td>
+                    <td aria-label="May">may</td>
+                    <td aria-label="June">june</td> 
+                </tr>
+                <tr>
+                    <td aria-label="July">july</td>
+                    <td aria-label="August">august</td>
+                    <td aria-label="September">september</td>
+                    <td aria-label="October">october</td> 
+                    <td aria-label="November">november</td>
+                    <td aria-label="December">december</td>
+                </tr>
+            </table>
+        </div>
+        <h2 id="dateTitle" aria-label="date">
+            <!-- TITLE WITH THE MONTH -->
+        </h2> 
+        <div id="timeline" role="timeline">
+            <ul id="dates">
+                <!-- <li><a href="#"></a></li> -->
+            </ul>
+            <ul id="issues">
+                <!-- <li id="date1">
+                    <p></p>
+                </li> -->
+            </ul>
+            <!-- <a href="#" id="next">+</a> optional -->
+            <!-- <a href="#" id="prev">-</a> optional -->
+        </div>
+    
+</body>
+
+
+<footer class="footbar">
+    <div class="company">
+        Website By Kinspire UW
+    </div>
+    <div class="email">
+        For any Copyright, questions, and concerns contact us at 
+        <a href="mailto:kinspire@uw.edu"> kinspire@uw.edu</a>
+    </div>
+</footer>
+
+<!-- JS file -->
+<script src="js/responsive.js"></script>
+<script src="js/data.js"></script>
+
+</html>
