@@ -12,6 +12,7 @@ import home from './home'
 import LoginHome from './LoginHome'
 import main from './main'
 import {Redirect} from 'react-router-dom';
+import TravelJournal from './TravelJournal';
   
 class App extends Component {
   constructor(props) {
@@ -60,6 +61,7 @@ class App extends Component {
               <Route exact path="/stories/:countryName" component={Stories} />
               <Route path="/events" component={Timeline} />
               <Route path="/main" component={main} />
+              <Route path="/TravelJournal" component={TravelJournal}/>
             </Switch>
           </main>
           </div>
